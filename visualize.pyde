@@ -51,7 +51,7 @@ class NeuralNetwork:
             if neurons:
                 for i in range(len(neurons)):
                     for j in range(len(layer)):
-                        weight = input_[i]
+                        weight = layer[j].weights[i]
                         strokeWeight((weight**2)*5)
                         line(layer[j].x ,layer[j].y ,neurons[i].x ,neurons[i].y)
                 
